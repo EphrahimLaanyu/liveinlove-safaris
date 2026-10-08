@@ -217,8 +217,8 @@ export default function Hero() {
               className="group flex flex-col justify-between"
             >
               <div>
-                {/* Frameless 4:5 Image from Bókun CDN */}
-                <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#E5E0D5] mb-5 sm:mb-6">
+                {/* Frameless 3:2 Image from Bókun CDN */}
+                <div className="relative aspect-[3/2] w-full overflow-hidden bg-[#E5E0D5] mb-5 sm:mb-6">
                   <Image
                     src={tour.image}
                     alt={tour.title}
@@ -366,7 +366,7 @@ export default function Hero() {
                 className="group flex flex-col justify-between"
               >
                 <div>
-                  <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#DFDBD0] mb-4 sm:mb-5">
+                  <div className="relative aspect-[3/2] w-full overflow-hidden bg-[#DFDBD0] mb-4 sm:mb-5">
                     <Image
                       src={safari.image}
                       alt={safari.title}

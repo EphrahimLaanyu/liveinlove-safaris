@@ -50,9 +50,25 @@ export default function RootLayout({
           <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
             <Link
               href="/"
-              className="font-serif text-2xl tracking-tight text-[#1C261E]"
+              className="flex items-center gap-3 group"
             >
-              Live in Love Kenya
+              <div className="relative w-11 h-11 sm:w-12 sm:h-12 overflow-hidden rounded-full shrink-0 border border-[#1C261E]/15 shadow-sm">
+                <Image
+                  src="/WhatsApp Image 2026-10-08 at 16.44.30.jpeg"
+                  alt="Live in Love Kenya Tours and Travel Logo"
+                  fill
+                  priority
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-serif text-xl sm:text-2xl tracking-tight text-[#1C261E] leading-none group-hover:text-[#9C6B2F] transition-colors">
+                  Live in Love Kenya
+                </span>
+                <span className="text-[9px] uppercase tracking-[0.2em] text-[#9C6B2F] font-medium hidden sm:block mt-1">
+                  Tours &amp; Travel
+                </span>
+              </div>
             </Link>
 
             <nav className="hidden md:flex items-center gap-10 text-xs uppercase tracking-[0.2em] text-[#1C261E]/70">
@@ -113,7 +129,25 @@ export default function RootLayout({
           </div>
 
           {mobileMenuOpen && (
-            <div className="md:hidden bg-[#F6F3EC] border-b border-[#1C261E]/10 px-6 py-8 flex flex-col gap-5 text-xs uppercase tracking-[0.2em]">
+            <div className="md:hidden bg-[#F6F3EC] border-b border-[#1C261E]/10 px-6 py-6 flex flex-col gap-4 text-xs uppercase tracking-[0.2em]">
+              <div className="flex items-center gap-3 pb-3 border-b border-[#1C261E]/10">
+                <div className="relative w-10 h-10 overflow-hidden rounded-full shrink-0 border border-[#1C261E]/15">
+                  <Image
+                    src="/WhatsApp Image 2026-10-08 at 16.44.30.jpeg"
+                    alt="Live in Love Kenya Logo"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-serif text-lg tracking-tight text-[#1C261E] leading-none">
+                    Live in Love Kenya
+                  </span>
+                  <span className="text-[8px] uppercase tracking-[0.2em] text-[#9C6B2F] font-medium mt-1">
+                    Tours &amp; Travel
+                  </span>
+                </div>
+              </div>
               <Link href="/" onClick={() => setMobileMenuOpen(false)}>
                 Home
               </Link>

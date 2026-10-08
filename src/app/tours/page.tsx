@@ -110,10 +110,10 @@ export default function Tours() {
                 key={tour.id}
                 className="group flex flex-col border-b border-[#1C261E]/15 pb-8 transition-all duration-500"
               >
-                {/* Frameless 4:5 Portrait Image with High-Contrast Price Tag */}
+                {/* Frameless 3:2 Image with High-Contrast Price Tag */}
                 <div
                   onClick={() => toggleExpand(tour.id)}
-                  className="relative aspect-[4/5] w-full overflow-hidden bg-[#E5E0D5] mb-6 cursor-pointer"
+                  className="relative aspect-[3/2] w-full overflow-hidden bg-[#E5E0D5] mb-6 cursor-pointer"
                 >
                   <Image
                     src={tour.image}
