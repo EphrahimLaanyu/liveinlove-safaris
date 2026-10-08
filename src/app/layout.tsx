@@ -47,7 +47,7 @@ export default function RootLayout({
             GLOBAL NAVBAR
         ========================================================= */}
         <header className="fixed top-0 left-0 right-0 z-50 bg-[#F6F3EC]/90 backdrop-blur-md border-b border-[#1C261E]/10">
-          <div className="max-w-[1400px] mx-auto px-6 sm:px-12 h-20 flex items-center justify-between">
+          <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
             <Link
               href="/"
               className="font-serif text-2xl tracking-tight text-[#1C261E]"
@@ -146,11 +146,11 @@ export default function RootLayout({
         ========================================================= */}
         <footer
           id="contact"
-          className="bg-[#141C16] text-[#F6F3EC] pt-24 pb-14 border-t border-white/10"
+          className="bg-[#141C16] text-[#F6F3EC] pt-16 sm:pt-24 pb-10 sm:pb-14 border-t border-white/10"
         >
-          <div className="max-w-[1400px] mx-auto px-6 sm:px-12">
+          <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12">
             {/* Pre-Footer Bespoke CTA Banner */}
-            <div className="relative overflow-hidden p-8 sm:p-16 mb-20 border border-white/15">
+            <div className="relative overflow-hidden p-6 sm:p-12 lg:p-16 mb-14 sm:mb-20 border border-white/15">
               <div className="absolute inset-0 z-0">
                 <Image
                   src="/lodge-night-sky.jpg"
@@ -162,30 +162,30 @@ export default function RootLayout({
               </div>
 
               <div className="relative z-10 max-w-2xl">
-                <span className="text-[11px] uppercase tracking-[0.25em] text-[#C89D54]">
+                <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#C89D54]">
                   Custom Itineraries • Private or Group Joining
                 </span>
-                <h3 className="font-serif text-4xl sm:text-6xl font-normal mt-3 leading-tight">
+                <h3 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal mt-3 leading-tight">
                   Let us craft your time in the wild.
                 </h3>
-                <p className="text-sm sm:text-base text-[#F6F3EC]/75 mt-4 leading-relaxed">
+                <p className="text-sm sm:text-base text-[#F6F3EC]/75 mt-3 sm:mt-4 leading-relaxed">
                   Whether you have a 6-hour layover at JKIA Airport or want a
                   custom 7-day Samburu, Ol Pejeta &amp; Maasai Mara expedition,
                   speak directly with our Nairobi team on Langata Road.
                 </p>
-                <div className="mt-8 flex flex-wrap gap-6">
+                <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6">
                   <a
                     href={WHATSAPP_CHAT_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#F6F3EC] hover:bg-[#C89D54] text-[#1C261E] text-xs uppercase tracking-[0.2em] px-8 py-4 transition-colors inline-flex items-center gap-2"
+                    className="bg-[#F6F3EC] hover:bg-[#C89D54] text-[#1C261E] text-xs uppercase tracking-[0.2em] px-8 py-4 transition-colors inline-flex items-center justify-center gap-2 w-full sm:w-auto text-center"
                   >
                     <span>WhatsApp {BRAND_INFO.phone}</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </a>
                   <a
                     href={`mailto:${BRAND_INFO.email}`}
-                    className="border border-white/25 hover:border-white text-white text-xs uppercase tracking-[0.2em] px-8 py-4 transition-colors"
+                    className="border border-white/25 hover:border-white text-white text-xs uppercase tracking-[0.2em] px-8 py-4 transition-colors w-full sm:w-auto text-center"
                   >
                     Email Inquiry
                   </a>
@@ -194,7 +194,7 @@ export default function RootLayout({
             </div>
 
             {/* Main Footer Columns */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-12 pb-16 border-b border-white/10">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-10 sm:gap-12 pb-12 sm:pb-16 border-b border-white/10">
               <div className="md:col-span-2">
                 <span className="font-serif text-3xl font-normal text-white">
                   {BRAND_INFO.fullName}

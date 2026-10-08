@@ -25,11 +25,11 @@ export default function Hero() {
       : SIGNATURE_SAFARIS.filter((item) => item.category === safariTab);
 
   return (
-    <div className="w-full min-h-screen bg-[#F6F3EC] text-[#1C261E] selection:bg-[#1C261E] selection:text-[#F6F3EC]">
+    <div className="w-full min-h-screen overflow-x-hidden bg-[#F6F3EC] text-[#1C261E] selection:bg-[#1C261E] selection:text-[#F6F3EC]">
       {/* =========================================================
           1. HERO SECTION + INTERACTIVE SAFARI FINDER (MINIMALIST)
       ========================================================= */}
-      <section className="relative min-h-[92vh] pt-24 pb-16 flex flex-col justify-between overflow-hidden bg-[#1C261E] text-[#F6F3EC]">
+      <section className="relative min-h-[92vh] pt-20 sm:pt-24 pb-12 sm:pb-16 flex flex-col justify-between overflow-hidden bg-[#1C261E] text-[#F6F3EC]">
         {/* Background Hero Image from Bókun CDN */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -43,20 +43,20 @@ export default function Hero() {
         </div>
 
         {/* Hero Main Content */}
-        <div className="relative z-10 max-w-[1400px] mx-auto px-6 sm:px-12 pt-16 sm:pt-24 pb-12 w-full">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12 pt-12 sm:pt-20 lg:pt-24 pb-10 sm:pb-12 w-full">
           <div className="max-w-3xl">
-            <p className="text-[11px] uppercase tracking-[0.25em] text-[#C89D54] mb-6">
+            <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#C89D54] mb-4 sm:mb-6">
               Registered with Kenya Tourism Board Since 2011
             </p>
 
-            <h1 className="font-serif text-5xl sm:text-7xl lg:text-[82px] font-normal text-[#F6F3EC] leading-[1.02] tracking-tight">
+            <h1 className="font-serif text-4xl sm:text-6xl lg:text-[82px] font-normal text-[#F6F3EC] leading-[1.05] sm:leading-[1.02] tracking-tight">
               Wild Adventures. <br />
               <span className="italic font-normal text-[#C89D54]">
                 Beautiful Memories.
               </span>
             </h1>
 
-            <p className="mt-8 text-base sm:text-lg text-[#F6F3EC]/85 max-w-2xl leading-relaxed font-normal">
+            <p className="mt-6 sm:mt-8 text-sm sm:text-lg text-[#F6F3EC]/85 max-w-2xl leading-relaxed font-normal">
               From daily 4x4 Land Cruiser game drives in{" "}
               <strong className="text-white font-medium">
                 Nairobi National Park
@@ -70,17 +70,17 @@ export default function Hero() {
             </p>
 
             {/* Primary Hero Buttons */}
-            <div className="mt-10 flex flex-wrap items-center gap-8">
+            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-8">
               <a
                 href="#nairobi-park"
-                className="bg-[#F6F3EC] hover:bg-[#C89D54] text-[#1C261E] px-8 py-4 text-xs uppercase tracking-[0.2em] transition-colors inline-flex items-center gap-2"
+                className="bg-[#F6F3EC] hover:bg-[#C89D54] text-[#1C261E] px-6 sm:px-8 py-3.5 sm:py-4 text-xs uppercase tracking-[0.2em] transition-colors inline-flex items-center justify-center gap-2 text-center"
               >
                 Explore Nairobi Game Drives
                 <ArrowUpRight className="w-4 h-4" />
               </a>
               <a
                 href="#signature-safaris"
-                className="text-[#F6F3EC] border-b border-[#F6F3EC]/40 hover:border-[#C89D54] hover:text-[#C89D54] pb-1 text-xs uppercase tracking-[0.2em] transition-colors"
+                className="text-[#F6F3EC] border-b border-[#F6F3EC]/40 hover:border-[#C89D54] hover:text-[#C89D54] pb-1 text-xs uppercase tracking-[0.2em] transition-colors text-center sm:text-left self-center sm:self-auto py-1"
               >
                 Discover Multi-Day Safaris
               </a>
@@ -89,16 +89,16 @@ export default function Hero() {
         </div>
 
         {/* Interactive Trip Finder Bar at Bottom of Hero */}
-        <div className="relative z-10 max-w-[1400px] mx-auto px-6 sm:px-12 w-full">
-          <div className="bg-[#F6F3EC] text-[#1C261E] p-6 sm:p-8 border-t border-[#1C261E]/10 grid grid-cols-1 md:grid-cols-4 gap-8 items-end">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12 w-full mt-8 lg:mt-0">
+          <div className="bg-[#F6F3EC] text-[#1C261E] p-5 sm:p-8 border-t border-[#1C261E]/10 grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 items-end">
             <div className="border-b border-[#1C261E]/20 pb-2">
-              <label className="block text-[10px] uppercase tracking-[0.22em] text-[#1C261E]/50 mb-2">
+              <label className="block text-[10px] uppercase tracking-[0.2em] text-[#1C261E]/50 mb-1.5 sm:mb-2">
                 1. Choose Destination / Style
               </label>
               <select
                 value={quickFilterDuration}
                 onChange={(e) => setQuickFilterDuration(e.target.value)}
-                className="w-full bg-transparent text-sm font-normal text-[#1C261E] focus:outline-none cursor-pointer"
+                className="w-full bg-transparent text-sm font-normal text-[#1C261E] focus:outline-none cursor-pointer py-1"
               >
                 <option value="nairobi">
                   Nairobi National Park (4 Hrs / Full Day)
@@ -116,13 +116,13 @@ export default function Hero() {
             </div>
 
             <div className="border-b border-[#1C261E]/20 pb-2">
-              <label className="block text-[10px] uppercase tracking-[0.22em] text-[#1C261E]/50 mb-2">
+              <label className="block text-[10px] uppercase tracking-[0.2em] text-[#1C261E]/50 mb-1.5 sm:mb-2">
                 2. Preferred Safari Vehicle
               </label>
               <select
                 value={quickFilterVehicle}
                 onChange={(e) => setQuickFilterVehicle(e.target.value)}
-                className="w-full bg-transparent text-sm font-normal text-[#1C261E] focus:outline-none cursor-pointer"
+                className="w-full bg-transparent text-sm font-normal text-[#1C261E] focus:outline-none cursor-pointer py-1"
               >
                 <option value="4x4">
                   Private 4x4 Land Cruiser Jeep (Pop-Up Roof)
@@ -135,15 +135,15 @@ export default function Hero() {
             </div>
 
             <div className="border-b border-[#1C261E]/20 pb-2">
-              <label className="block text-[10px] uppercase tracking-[0.22em] text-[#1C261E]/50 mb-2">
+              <label className="block text-[10px] uppercase tracking-[0.2em] text-[#1C261E]/50 mb-1.5 sm:mb-2">
                 3. Worry-Free Logistics
               </label>
-              <div className="text-sm text-[#1C261E]">
+              <div className="text-sm text-[#1C261E] py-1">
                 <span>Hotel/JKIA Pickup + KWS Ticket Help</span>
               </div>
             </div>
 
-            <div>
+            <div className="pt-2 md:pt-0">
               <a
                 href={
                   quickFilterDuration === "nairobi" ||
@@ -151,7 +151,7 @@ export default function Hero() {
                     ? "#nairobi-park"
                     : "#signature-safaris"
                 }
-                className="w-full bg-[#1C261E] hover:bg-[#2c3b2f] text-[#F6F3EC] py-4 px-6 text-xs uppercase tracking-[0.2em] transition-colors flex items-center justify-center gap-2"
+                className="w-full bg-[#1C261E] hover:bg-[#2c3b2f] text-[#F6F3EC] py-3.5 sm:py-4 px-6 text-xs uppercase tracking-[0.2em] transition-colors flex items-center justify-center gap-2 text-center"
               >
                 Show Matching Tours
                 <ArrowUpRight className="w-3.5 h-3.5 text-[#C89D54]" />
@@ -164,18 +164,18 @@ export default function Hero() {
       {/* =========================================================
           2. AUTHORITY & TRUST STRIP
       ========================================================= */}
-      <section className="border-b border-[#1C261E]/10 py-14">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-12">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
+      <section className="border-b border-[#1C261E]/10 py-10 sm:py-14">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
             {TRUST_STATS.map((stat, idx) => (
-              <div key={idx} className="border-l border-[#1C261E]/15 pl-6">
-                <p className="font-serif text-3xl sm:text-4xl font-normal text-[#1C261E]">
+              <div key={idx} className="border-l border-[#1C261E]/15 pl-4 sm:pl-6">
+                <p className="font-serif text-2xl sm:text-4xl font-normal text-[#1C261E]">
                   {stat.value}
                 </p>
-                <p className="text-xs uppercase tracking-[0.18em] text-[#1C261E] mt-2">
+                <p className="text-[11px] sm:text-xs uppercase tracking-[0.14em] sm:tracking-[0.18em] text-[#1C261E] mt-1.5 sm:mt-2">
                   {stat.label}
                 </p>
-                <p className="text-xs text-[#1C261E]/60 mt-1">{stat.detail}</p>
+                <p className="text-[11px] sm:text-xs text-[#1C261E]/60 mt-1 leading-normal">{stat.detail}</p>
               </div>
             ))}
           </div>
@@ -187,14 +187,14 @@ export default function Hero() {
       ========================================================= */}
       <section
         id="nairobi-park"
-        className="py-24 sm:py-32 max-w-[1400px] mx-auto px-6 sm:px-12"
+        className="py-16 sm:py-24 lg:py-32 max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-end mb-12 sm:mb-20">
           <div className="lg:col-span-7">
-            <span className="text-[11px] uppercase tracking-[0.25em] text-[#9C6B2F] block mb-3">
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#9C6B2F] block mb-2 sm:mb-3">
               The World&apos;s Only Wildlife Capital • 28 Mins From City Center
             </span>
-            <h2 className="font-serif text-4xl sm:text-6xl font-normal text-[#1C261E] tracking-tight leading-[1.06]">
+            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-[#1C261E] tracking-tight leading-[1.08] sm:leading-[1.06]">
               Nairobi National Park &amp; City Sanctuaries
             </h2>
           </div>
@@ -210,7 +210,7 @@ export default function Hero() {
         </div>
 
         {/* 3 Curated Flagship Nairobi Items — Frameless Editorial Columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-10 gap-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 lg:gap-x-10 gap-y-12 sm:gap-y-16">
           {NAIROBI_EXCURSIONS.map((tour) => (
             <article
               key={tour.id}
@@ -218,22 +218,23 @@ export default function Hero() {
             >
               <div>
                 {/* Frameless 4:5 Image from Bókun CDN */}
-                <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#E5E0D5] mb-6">
+                <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#E5E0D5] mb-5 sm:mb-6">
                   <Image
                     src={tour.image}
                     alt={tour.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                   />
                 </div>
 
                 {/* Minimal Meta Line */}
-                <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.16em] text-[#1C261E]/55 pb-3 mb-4 border-b border-[#1C261E]/10">
+                <div className="flex items-center justify-between text-[10px] sm:text-[11px] uppercase tracking-[0.14em] sm:tracking-[0.16em] text-[#1C261E]/55 pb-2.5 sm:pb-3 mb-3 sm:mb-4 border-b border-[#1C261E]/10">
                   <span>{tour.duration}</span>
                   <span>{tour.vehicle}</span>
                 </div>
 
-                <p className="text-[11px] uppercase tracking-[0.2em] text-[#9C6B2F] mb-2">
+                <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.18em] sm:tracking-[0.2em] text-[#9C6B2F] mb-1.5 sm:mb-2">
                   {tour.badge}
                 </p>
 
@@ -241,18 +242,18 @@ export default function Hero() {
                   {tour.title}
                 </h3>
 
-                <p className="mt-3 text-sm text-[#1C261E]/70 leading-relaxed">
+                <p className="mt-2.5 sm:mt-3 text-sm text-[#1C261E]/70 leading-relaxed">
                   {tour.shortDescription}
                 </p>
 
                 {/* Clean Hairline Highlights List */}
-                <ul className="mt-6 space-y-2 border-t border-[#1C261E]/10 pt-4">
+                <ul className="mt-5 sm:mt-6 space-y-2 border-t border-[#1C261E]/10 pt-4">
                   {tour.highlights.map((item, idx) => (
                     <li
                       key={idx}
                       className="text-xs text-[#1C261E]/75 flex items-start gap-2"
                     >
-                      <span className="text-[#9C6B2F]">—</span>
+                      <span className="text-[#9C6B2F] shrink-0">—</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -260,7 +261,7 @@ export default function Hero() {
               </div>
 
               {/* Minimal Action Link */}
-              <div className="mt-8 pt-4 border-t border-[#1C261E]/10">
+              <div className="mt-6 sm:mt-8 pt-4 border-t border-[#1C261E]/10">
                 <a
                   href={`https://wa.me/${BRAND_INFO.whatsapp}?text=Hi%20Live%20in%20Love%20Kenya,%20I%20want%20to%20book%20the%20${encodeURIComponent(
                     tour.title
@@ -278,7 +279,7 @@ export default function Hero() {
         </div>
 
         {/* Overland Truck & Large Group Callout Banner — Minimal Architectural Strip */}
-        <div className="mt-24 pt-12 border-t border-[#1C261E]/15 flex flex-col md:flex-row items-start md:items-end justify-between gap-8">
+        <div className="mt-16 sm:mt-24 pt-8 sm:pt-12 border-t border-[#1C261E]/15 flex flex-col md:flex-row items-start md:items-end justify-between gap-6 sm:gap-8">
           <div className="max-w-2xl">
             <h4 className="font-serif text-2xl sm:text-3xl font-normal text-[#1C261E]">
               Travelling with a Large Group, Family or Multi-Country Expedition?
@@ -297,7 +298,7 @@ export default function Hero() {
             href={`https://wa.me/${BRAND_INFO.whatsapp}?text=Hi!%20We%20are%20interested%20in%20the%20Overland%20Safari%20Truck%20for%20a%20group.`}
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 border border-[#1C261E] hover:bg-[#1C261E] hover:text-[#F6F3EC] text-[#1C261E] text-xs uppercase tracking-[0.2em] px-8 py-4 transition-colors"
+            className="w-full sm:w-auto text-center shrink-0 border border-[#1C261E] hover:bg-[#1C261E] hover:text-[#F6F3EC] text-[#1C261E] text-xs uppercase tracking-[0.2em] px-8 py-4 transition-colors"
           >
             Request Group Truck Quote
           </a>
@@ -309,26 +310,26 @@ export default function Hero() {
       ========================================================= */}
       <section
         id="signature-safaris"
-        className="py-24 sm:py-32 bg-[#EFECE3] border-y border-[#1C261E]/10"
+        className="py-16 sm:py-24 lg:py-32 bg-[#EFECE3] border-y border-[#1C261E]/10"
       >
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-12">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6 sm:gap-8">
             <div>
-              <span className="text-[11px] uppercase tracking-[0.25em] text-[#9C6B2F] block mb-3">
+              <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#9C6B2F] block mb-2 sm:mb-3">
                 Beyond the City • Curated Expeditions Across Kenya
               </span>
-              <h2 className="font-serif text-4xl sm:text-6xl font-normal text-[#1C261E] tracking-tight">
+              <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-[#1C261E] tracking-tight leading-[1.08]">
                 Rift Valley Escapes &amp; Multi-Day Safaris
               </h2>
             </div>
 
             {/* Minimal Underline Filter Tabs */}
-            <div className="flex flex-wrap items-center gap-8 text-xs uppercase tracking-[0.2em] border-b border-[#1C261E]/15 pb-2">
+            <div className="flex items-center gap-6 sm:gap-8 text-xs uppercase tracking-[0.16em] sm:tracking-[0.2em] border-b border-[#1C261E]/15 pb-2.5 overflow-x-auto max-w-full whitespace-nowrap">
               <button
                 onClick={() => setSafariTab("all")}
-                className={`transition-colors ${
+                className={`shrink-0 transition-colors pb-0.5 ${
                   safariTab === "all"
-                    ? "text-[#1C261E] font-semibold"
+                    ? "text-[#1C261E] font-semibold border-b-2 border-[#1C261E]"
                     : "text-[#1C261E]/45 hover:text-[#1C261E]"
                 }`}
               >
@@ -336,9 +337,9 @@ export default function Hero() {
               </button>
               <button
                 onClick={() => setSafariTab("day-trip")}
-                className={`transition-colors ${
+                className={`shrink-0 transition-colors pb-0.5 ${
                   safariTab === "day-trip"
-                    ? "text-[#1C261E] font-semibold"
+                    ? "text-[#1C261E] font-semibold border-b-2 border-[#1C261E]"
                     : "text-[#1C261E]/45 hover:text-[#1C261E]"
                 }`}
               >
@@ -346,9 +347,9 @@ export default function Hero() {
               </button>
               <button
                 onClick={() => setSafariTab("multi-day")}
-                className={`transition-colors ${
+                className={`shrink-0 transition-colors pb-0.5 ${
                   safariTab === "multi-day"
-                    ? "text-[#1C261E] font-semibold"
+                    ? "text-[#1C261E] font-semibold border-b-2 border-[#1C261E]"
                     : "text-[#1C261E]/45 hover:text-[#1C261E]"
                 }`}
               >
@@ -358,53 +359,54 @@ export default function Hero() {
           </div>
 
           {/* Frameless Safari Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 lg:gap-x-8 gap-y-12 sm:gap-y-16">
             {filteredSafaris.map((safari) => (
               <article
                 key={safari.id}
                 className="group flex flex-col justify-between"
               >
                 <div>
-                  <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#DFDBD0] mb-5">
+                  <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#DFDBD0] mb-4 sm:mb-5">
                     <Image
                       src={safari.image}
                       alt={safari.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       className="object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                     />
                   </div>
 
-                  <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.16em] text-[#1C261E]/55 pb-2.5 mb-3 border-b border-[#1C261E]/10">
+                  <div className="flex items-center justify-between text-[10px] sm:text-[11px] uppercase tracking-[0.14em] sm:tracking-[0.16em] text-[#1C261E]/55 pb-2.5 mb-2.5 sm:mb-3 border-b border-[#1C261E]/10">
                     <span>{safari.duration}</span>
                     <span>{safari.badge}</span>
                   </div>
 
-                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#9C6B2F] mb-1.5">
+                  <div className="text-[10px] uppercase tracking-[0.18em] sm:tracking-[0.2em] text-[#9C6B2F] mb-1.5">
                     {safari.vehicle}
                   </div>
 
-                  <h3 className="font-serif text-2xl font-normal text-[#1C261E] leading-snug">
+                  <h3 className="font-serif text-xl sm:text-2xl font-normal text-[#1C261E] leading-snug">
                     {safari.title}
                   </h3>
 
-                  <p className="mt-2.5 text-xs text-[#1C261E]/70 leading-relaxed">
+                  <p className="mt-2 sm:mt-2.5 text-xs text-[#1C261E]/70 leading-relaxed">
                     {safari.shortDescription}
                   </p>
 
-                  <ul className="mt-4 space-y-1.5 border-t border-[#1C261E]/10 pt-3">
+                  <ul className="mt-3.5 sm:mt-4 space-y-1.5 border-t border-[#1C261E]/10 pt-3">
                     {safari.highlights.map((h, i) => (
                       <li
                         key={i}
                         className="flex items-start gap-2 text-[11px] text-[#1C261E]/75"
                       >
-                        <span className="text-[#9C6B2F]">—</span>
+                        <span className="text-[#9C6B2F] shrink-0">—</span>
                         <span>{h}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="mt-6 pt-3 border-t border-[#1C261E]/10">
+                <div className="mt-5 sm:mt-6 pt-3 border-t border-[#1C261E]/10">
                   <a
                     href={`https://wa.me/${BRAND_INFO.whatsapp}?text=Hello!%20I%20would%20like%20details%20on%20the%20${encodeURIComponent(
                       safari.title
@@ -428,43 +430,47 @@ export default function Hero() {
       ========================================================= */}
       <section
         id="our-fleet"
-        className="py-24 sm:py-36 max-w-[1400px] mx-auto px-6 sm:px-12"
+        className="py-16 sm:py-24 lg:py-36 max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-16 items-center">
           {/* Left Image Collage from Bókun CDN — Sharp Architectural Edges */}
-          <div className="lg:col-span-6 grid grid-cols-2 gap-4 relative">
-            <div className="space-y-4">
-              <div className="relative h-64 overflow-hidden">
+          <div className="lg:col-span-6 grid grid-cols-2 gap-3 sm:gap-4 relative">
+            <div className="space-y-3 sm:space-y-4">
+              <div className="relative h-44 sm:h-64 overflow-hidden">
                 <Image
                   src="https://imgcdn.bokun.tools/9b96ded9-a77d-4f11-b818-b02384802fd1.jpg"
                   alt="4x4 Land Cruiser Wildlife Tracking"
                   fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-32 sm:h-48 overflow-hidden">
                 <Image
                   src="https://imgcdn.bokun.tools/eab60ac7-0a1a-4093-9fe6-b46f4a7c262c.jpg"
                   alt="Kenya Wildlife Conservation"
                   fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
                   className="object-cover"
                 />
               </div>
             </div>
-            <div className="space-y-4 pt-8">
-              <div className="relative h-48 overflow-hidden">
+            <div className="space-y-3 sm:space-y-4 pt-4 sm:pt-8">
+              <div className="relative h-32 sm:h-48 overflow-hidden">
                 <Image
                   src="https://imgcdn.bokun.tools/ad479625-e57b-4789-b476-5ef39ab0305a.jpeg"
                   alt="Samburu & Ewaso Nyiro Landscape"
                   fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-44 sm:h-64 overflow-hidden">
                 <Image
                   src="https://imgcdn.bokun.tools/6c0372ab-4b6b-4138-835c-18a02659c2af.jpg"
                   alt="Savanna Game Drive"
                   fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
                   className="object-cover"
                 />
               </div>
@@ -473,14 +479,14 @@ export default function Hero() {
 
           {/* Right Narrative */}
           <div className="lg:col-span-6">
-            <span className="text-[11px] uppercase tracking-[0.25em] text-[#9C6B2F] block mb-3">
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#9C6B2F] block mb-2 sm:mb-3">
               About Live in Love Kenya • Registered Since 2011
             </span>
-            <h2 className="font-serif text-4xl sm:text-5xl font-normal text-[#1C261E] leading-[1.1]">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1C261E] leading-[1.12] sm:leading-[1.1]">
               Over a Decade of Sustainable Safaris &amp; Authentic Hospitality
             </h2>
 
-            <p className="mt-6 text-base text-[#1C261E]/75 leading-relaxed">
+            <p className="mt-4 sm:mt-6 text-sm sm:text-base text-[#1C261E]/75 leading-relaxed">
               <strong className="text-[#1C261E] font-medium">
                 Live in Love Kenya Tours and Travel
               </strong>{" "}
@@ -493,7 +499,7 @@ export default function Hero() {
               tourism and the conservation of wildlife and natural ecosystems.
             </p>
 
-            <p className="mt-4 text-base text-[#1C261E]/75 leading-relaxed">
+            <p className="mt-3 sm:mt-4 text-sm sm:text-base text-[#1C261E]/75 leading-relaxed">
               Our team consists of professional, deeply knowledgeable
               driver-guides who handle every detail—from assisting guests with
               online KWS park entry tickets to arranging domestic bush-to-beach
@@ -501,21 +507,21 @@ export default function Hero() {
             </p>
 
             {/* Key Pillars — Hairline Grid */}
-            <div className="mt-10 pt-8 border-t border-[#1C261E]/15 grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-[#1C261E]/15 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
               <div>
-                <h4 className="font-serif text-2xl font-normal text-[#1C261E]">
+                <h4 className="font-serif text-xl sm:text-2xl font-normal text-[#1C261E]">
                   Pop-Up Roof 4x4 Jeeps
                 </h4>
-                <p className="text-xs text-[#1C261E]/70 mt-2 leading-relaxed">
+                <p className="text-xs text-[#1C261E]/70 mt-1.5 sm:mt-2 leading-relaxed">
                   Spacious custom 4-wheel drive Land Cruisers for unobstructed
                   360° photography and off-road tracking.
                 </p>
               </div>
               <div>
-                <h4 className="font-serif text-2xl font-normal text-[#1C261E]">
+                <h4 className="font-serif text-xl sm:text-2xl font-normal text-[#1C261E]">
                   Seamless KWS Park Entry
                 </h4>
-                <p className="text-xs text-[#1C261E]/70 mt-2 leading-relaxed">
+                <p className="text-xs text-[#1C261E]/70 mt-1.5 sm:mt-2 leading-relaxed">
                   Hotel or JKIA pickup plus hands-on assistance purchasing
                   official Kenya Wildlife Service eCitizen tickets.
                 </p>
@@ -530,15 +536,15 @@ export default function Hero() {
       ========================================================= */}
       <section
         id="reviews"
-        className="py-24 sm:py-32 bg-[#1C261E] text-[#F6F3EC]"
+        className="py-16 sm:py-24 lg:py-32 bg-[#1C261E] text-[#F6F3EC]"
       >
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-12">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
             <div>
-              <span className="text-[11px] uppercase tracking-[0.25em] text-[#C89D54] block mb-3">
+              <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#C89D54] block mb-2 sm:mb-3">
                 Verified TripAdvisor Reviews
               </span>
-              <h2 className="font-serif text-4xl sm:text-5xl font-normal">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal">
                 Stories From Our Guests in the Wild
               </h2>
             </div>
@@ -550,19 +556,19 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 border-t border-white/15 pt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 border-t border-white/15 pt-8 sm:pt-12">
             {TRIPADVISOR_REVIEWS.map((review) => (
               <div
                 key={review.id}
                 className="flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.18em] text-[#C89D54] mb-4">
+                  <div className="flex items-center justify-between text-[10px] sm:text-[11px] uppercase tracking-[0.14em] sm:tracking-[0.18em] text-[#C89D54] mb-3 sm:mb-4">
                     <span>{"★".repeat(review.rating)}</span>
                     <span>Guide: {review.guideMentioned}</span>
                   </div>
 
-                  <h3 className="font-serif text-2xl font-normal text-white mb-3">
+                  <h3 className="font-serif text-xl sm:text-2xl font-normal text-white mb-2 sm:mb-3">
                     &ldquo;{review.title}&rdquo;
                   </h3>
 
@@ -571,8 +577,8 @@ export default function Hero() {
                   </p>
                 </div>
 
-                <div className="mt-8 pt-4 border-t border-white/10">
-                  <p className="text-xs uppercase tracking-[0.18em] text-white">
+                <div className="mt-6 sm:mt-8 pt-4 border-t border-white/10">
+                  <p className="text-xs uppercase tracking-[0.16em] sm:tracking-[0.18em] text-white">
                     {review.author}
                   </p>
                   <p className="text-xs text-[#F6F3EC]/50 mt-0.5">
