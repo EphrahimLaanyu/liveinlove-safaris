@@ -50,7 +50,7 @@ export const TRUST_STATS = [
   },
 ];
 
-// Consolidated 3 Flagship Nairobi Packages (Replacing the 8 duplicate cards)
+// Consolidated 3 Flagship Nairobi Packages
 export const NAIROBI_EXCURSIONS: TourPackage[] = [
   {
     id: "nbo-1",
@@ -60,7 +60,7 @@ export const NAIROBI_EXCURSIONS: TourPackage[] = [
     duration: "4 Hours (Half-Day)",
     vehicle: "4x4 Land Cruiser Jeep",
     badge: "Most Popular • Daily 6AM–7PM",
-    image: "/giza-hero.jpg",
+    image: "https://imgcdn.bokun.tools/f0cb1022-39b7-4258-8e14-8e13b64eb68e.jpg",
     shortDescription:
       "Track lions, black & white rhinos, buffaloes, and giraffes framed against the Nairobi skyline in a custom pop-up roof 4x4 Land Cruiser.",
     highlights: [
@@ -69,7 +69,8 @@ export const NAIROBI_EXCURSIONS: TourPackage[] = [
       "Hands-on KWS online park entrance ticket assistance",
       "Complimentary hotel or meeting-point pickup",
     ],
-    bokunUrl: "#book-nbo-classic",
+    bokunUrl:
+      "https://widgets.bokun.io/online-sales/f4012ff0-ce9d-4f87-8011-d994346a9e17/experience/672482?partialView=1",
   },
   {
     id: "nbo-2",
@@ -79,7 +80,7 @@ export const NAIROBI_EXCURSIONS: TourPackage[] = [
     duration: "6–8 Hours",
     vehicle: "4x4 Land Cruiser Jeep",
     badge: "Ideal for 6h+ Airport Layovers",
-    image: "/elephants-greeting.jpg",
+    image: "https://imgcdn.bokun.tools/939becfc-8bc3-4e63-80f2-0ef5e9b1eb79.jpg",
     shortDescription:
       "Tailored for JKIA transit travelers or city guests: combine a morning game drive with baby elephants at Sheldrick Wildlife Trust and the Giraffe Centre.",
     highlights: [
@@ -88,7 +89,8 @@ export const NAIROBI_EXCURSIONS: TourPackage[] = [
       "Hand-feed endangered Rothschild giraffes at Giraffe Centre",
       "Includes curated local lunch stop",
     ],
-    bokunUrl: "#book-nbo-layover",
+    bokunUrl:
+      "https://widgets.bokun.io/online-sales/f4012ff0-ce9d-4f87-8011-d994346a9e17/experience/765072?partialView=1",
   },
   {
     id: "nbo-3",
@@ -98,7 +100,7 @@ export const NAIROBI_EXCURSIONS: TourPackage[] = [
     duration: "Full Day (8–10 Hours)",
     vehicle: "4x4 Land Cruiser Jeep",
     badge: "All-In-One Nairobi Signature",
-    image: "/elephants-family.jpg",
+    image: "https://imgcdn.bokun.tools/d2c8ac8a-9ffa-415f-9091-9e331ff926b5.jpg",
     shortDescription:
       "Experience every iconic corner of Nairobi in one seamless day: dawn wildlife tracking, conservation sanctuaries, and traditional homesteads & dances at Bomas of Kenya.",
     highlights: [
@@ -107,7 +109,8 @@ export const NAIROBI_EXCURSIONS: TourPackage[] = [
       "Afternoon tribal dance showcase at Bomas of Kenya",
       "Dedicated guide from sunrise to late afternoon",
     ],
-    bokunUrl: "#book-nbo-fullday",
+    bokunUrl:
+      "https://widgets.bokun.io/online-sales/f4012ff0-ce9d-4f87-8011-d994346a9e17/experience/769313?partialView=1",
   },
 ];
 
@@ -122,7 +125,7 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
     duration: "1 Day (Daily Departure)",
     vehicle: "4x4 Land Cruiser Jeep",
     badge: "Rift Valley Day Escape",
-    image: "/ewaso-hero.jpg",
+    image: "https://imgcdn.bokun.tools/6c0372ab-4b6b-4138-835c-18a02659c2af.jpg",
     shortDescription:
       "Journey down the Great Rift Valley escarpment past Mt. Longonot for a guided boat ride among hippos and a walking safari on Crescent Island.",
     highlights: [
@@ -130,7 +133,8 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
       "Guided boat safari past hippos & fish-hunting African eagles",
       "Guided walking safari alongside zebras, giraffes & waterbucks",
     ],
-    bokunUrl: "#book-naivasha",
+    bokunUrl:
+      "https://widgets.bokun.io/online-sales/f4012ff0-ce9d-4f87-8011-d994346a9e17/experience/804172?partialView=1",
   },
   {
     id: "saf-2",
@@ -140,7 +144,7 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
     duration: "2 Days / 1 Night",
     vehicle: "4x4 Land Cruiser Jeep",
     badge: "Kilimanjaro Views",
-    image: "/elephants-hidden.jpg",
+    image: "https://imgcdn.bokun.tools/1710c501-10a3-4265-822b-e4f3b9ca1777.jpg",
     shortDescription:
       "Witness over 1,800 free-ranging big-tusked elephants, lions, cheetahs, and 47 raptor species set against the snow-capped peak of Mount Kilimanjaro.",
     highlights: [
@@ -148,7 +152,8 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
       "Swamp game viewing for hippos, flamingos, pelicans & kingfishers",
       "Authentic Maasai pastoral cultural encounter",
     ],
-    bokunUrl: "#book-amboseli",
+    bokunUrl:
+      "https://widgets.bokun.io/online-sales/f4012ff0-ce9d-4f87-8011-d994346a9e17/experience/822165?partialView=1",
   },
   {
     id: "saf-3",
@@ -158,7 +163,7 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
     duration: "2 Days / 1 Night",
     vehicle: "4x4 Land Cruiser Jeep",
     badge: "Rhinos & Flamingos",
-    image: "/gallery-landscape.jpg",
+    image: "https://imgcdn.bokun.tools/b65bf307-9ea5-4e14-b0f3-9ef06336f545.jpg",
     shortDescription:
       "Just 156 km northwest of Nairobi: track black and white rhinos, tree-climbing lions, and vibrant flocks of pink flamingos along the alkaline shores.",
     highlights: [
@@ -166,7 +171,8 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
       "World-famous birdwatching & pink flamingo shorelines",
       "Boat ride & Crescent Island exploration in Naivasha",
     ],
-    bokunUrl: "#book-nakuru",
+    bokunUrl:
+      "https://widgets.bokun.io/online-sales/f4012ff0-ce9d-4f87-8011-d994346a9e17/experience/781719?partialView=1",
   },
 
   // MULTI-DAY EXPEDITIONS
@@ -178,7 +184,7 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
     duration: "3 Days / 2 Nights",
     vehicle: "4x4 Land Cruiser Jeep",
     badge: "Conservation Spotlight",
-    image: "/conservation-ranger.jpg",
+    image: "https://imgcdn.bokun.tools/9b96ded9-a77d-4f11-b818-b02384802fd1.jpg",
     shortDescription:
       "Where wildlife meets frontier conservation near Nanyuki. Encounter the Big Five, visit the last two northern white rhinos on Earth, and cross the Equator.",
     highlights: [
@@ -186,7 +192,8 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
       "Guided bush walks & night elephant-watching at the waterholes",
       "Scenic Equator crossing stop with Mount Kenya views",
     ],
-    bokunUrl: "#book-olpejeta",
+    bokunUrl:
+      "https://widgets.bokun.io/online-sales/f4012ff0-ce9d-4f87-8011-d994346a9e17/experience/1177645?partialView=1",
   },
   {
     id: "saf-5",
@@ -196,7 +203,7 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
     duration: "4 Days / 3 Nights",
     vehicle: "4x4 Land Cruiser Jeep",
     badge: "Southern Circuit",
-    image: "/corridor-hero.jpg",
+    image: "https://imgcdn.bokun.tools/285ebc0d-b2c8-454b-88ff-4e9f3ac21ad9.jpg",
     shortDescription:
       "Connect with raw wilderness across Tsavo's red-dust plains and prehistoric lava flows before tracking Amboseli's giant tuskers under Kilimanjaro.",
     highlights: [
@@ -204,7 +211,8 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
       "Golden-hour photography beneath Mount Kilimanjaro",
       "3 nights in curated safari lodges and tented camps",
     ],
-    bokunUrl: "#book-tsavo-amboseli",
+    bokunUrl:
+      "https://widgets.bokun.io/online-sales/f4012ff0-ce9d-4f87-8011-d994346a9e17/experience/857083?partialView=1",
   },
   {
     id: "saf-6",
@@ -214,7 +222,7 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
     duration: "5 Days / 4 Nights",
     vehicle: "4x4 Land Cruiser Jeep",
     badge: "Big Five & Big Cats",
-    image: "/giza-and-leopard.jpg",
+    image: "https://imgcdn.bokun.tools/67214aac-705b-4065-8df8-a66f8a597fdb.jpg",
     shortDescription:
       "From night game drives in Laikipia and Rift Valley flamingo lakes to the endless plains of the Maasai Mara and the Mara River migration crossings.",
     highlights: [
@@ -222,7 +230,8 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
       "Lake Nakuru rhino sanctuary & Rift Valley escarpment",
       "Full-day Maasai Mara game drives tracking the 5 Big Cats",
     ],
-    bokunUrl: "#book-5day-mara",
+    bokunUrl:
+      "https://widgets.bokun.io/online-sales/f4012ff0-ce9d-4f87-8011-d994346a9e17/experience/783834?partialView=1",
   },
   {
     id: "saf-7",
@@ -232,7 +241,7 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
     duration: "5 Days / 4 Nights",
     vehicle: "4x4 Jeep + Local Flight",
     badge: "Bush + Indian Ocean",
-    image: "/lodge-night-sky.jpg",
+    image: "https://imgcdn.bokun.tools/b7691a38-62b0-4bc6-8b3a-d8c587cb059c.jpg",
     shortDescription:
       "Pair thrilling Big Five game drives across the Maasai Mara savannah with a seamless domestic flight straight to the white sands of Diani Beach.",
     highlights: [
@@ -240,7 +249,8 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
       "Domestic bush-to-beach flight arrangement included",
       "Relaxation along Diani's turquoise Indian Ocean coastline",
     ],
-    bokunUrl: "#book-mara-diani",
+    bokunUrl:
+      "https://widgets.bokun.io/online-sales/f4012ff0-ce9d-4f87-8011-d994346a9e17/experience/925380?partialView=1",
   },
   {
     id: "saf-8",
@@ -250,7 +260,7 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
     duration: "7 Days / 6 Nights",
     vehicle: "4x4 Land Cruiser Jeep",
     badge: "The Grand Kenya Circuit",
-    image: "/giza-full.jpg",
+    image: "https://imgcdn.bokun.tools/ad479625-e57b-4789-b476-5ef39ab0305a.jpeg",
     shortDescription:
       "Our flagship expedition through northern Kenya's indigenous Samburu heartland, Ol Pejeta, Lakes Nakuru & Naivasha, and the world-renowned Maasai Mara.",
     highlights: [
@@ -258,7 +268,8 @@ export const SIGNATURE_SAFARIS: TourPackage[] = [
       "Ol Pejeta rhinos, Lake Nakuru flamingos & Naivasha boat ride",
       "2 full days in the Maasai Mara in a pop-up roof 4x4 Jeep",
     ],
-    bokunUrl: "#book-7day-grand",
+    bokunUrl:
+      "https://widgets.bokun.io/online-sales/f4012ff0-ce9d-4f87-8011-d994346a9e17/experience/890206?partialView=1",
   },
 ];
 

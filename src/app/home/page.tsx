@@ -1,3 +1,4 @@
+// src/app/home/page.tsx
 "use client";
 
 import React, { useState } from "react";
@@ -29,10 +30,10 @@ export default function Hero() {
           1. HERO SECTION + INTERACTIVE SAFARI FINDER (MINIMALIST)
       ========================================================= */}
       <section className="relative min-h-[92vh] pt-24 pb-16 flex flex-col justify-between overflow-hidden bg-[#1C261E] text-[#F6F3EC]">
-        {/* Background Hero Image from public/ */}
+        {/* Background Hero Image from Bókun CDN */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/corridor-hero.jpg"
+            src="https://imgcdn.bokun.tools/ad479625-e57b-4789-b476-5ef39ab0305a.jpeg"
             alt="Live in Love Kenya Safari Landscape"
             fill
             priority
@@ -216,7 +217,7 @@ export default function Hero() {
               className="group flex flex-col justify-between"
             >
               <div>
-                {/* Frameless 4:5 Image */}
+                {/* Frameless 4:5 Image from Bókun CDN */}
                 <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#E5E0D5] mb-6">
                   <Image
                     src={tour.image}
@@ -430,12 +431,12 @@ export default function Hero() {
         className="py-24 sm:py-36 max-w-[1400px] mx-auto px-6 sm:px-12"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left Image Collage from public/ — Sharp Architectural Edges */}
+          {/* Left Image Collage from Bókun CDN — Sharp Architectural Edges */}
           <div className="lg:col-span-6 grid grid-cols-2 gap-4 relative">
             <div className="space-y-4">
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="/giza-and-leopard (1).jpg"
+                  src="https://imgcdn.bokun.tools/9b96ded9-a77d-4f11-b818-b02384802fd1.jpg"
                   alt="4x4 Land Cruiser Wildlife Tracking"
                   fill
                   className="object-cover"
@@ -443,7 +444,7 @@ export default function Hero() {
               </div>
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/wild-dog-track.jpg"
+                  src="https://imgcdn.bokun.tools/eab60ac7-0a1a-4093-9fe6-b46f4a7c262c.jpg"
                   alt="Kenya Wildlife Conservation"
                   fill
                   className="object-cover"
@@ -453,7 +454,7 @@ export default function Hero() {
             <div className="space-y-4 pt-8">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/ewaso-detail.jpg"
+                  src="https://imgcdn.bokun.tools/ad479625-e57b-4789-b476-5ef39ab0305a.jpeg"
                   alt="Samburu & Ewaso Nyiro Landscape"
                   fill
                   className="object-cover"
@@ -461,7 +462,7 @@ export default function Hero() {
               </div>
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="/giza-grass.jpg"
+                  src="https://imgcdn.bokun.tools/6c0372ab-4b6b-4138-835c-18a02659c2af.jpg"
                   alt="Savanna Game Drive"
                   fill
                   className="object-cover"
@@ -583,11 +584,6 @@ export default function Hero() {
           </div>
         </div>
       </section>
-
-      {/* =========================================================
-          7. BESPOKE TRIP PLANNER CTA & FOOTER
-      ========================================================= */}
-
     </div>
   );
 }
